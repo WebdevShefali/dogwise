@@ -148,7 +148,7 @@
     <!-- Photo gallery:start -->
     <section id="photo-gallery" >
       <h1>Photo gallery</h1>
-      <div class="slideshow-container">
+      <!-- <div class="slideshow-container">
         <div class="slide">
           <div class="number">1 / 10</div>
           <img src="images/dog/dog (1).jpg" alt="dog-img" />
@@ -192,20 +192,30 @@
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
       </div>
-      <br />
+      <br /> -->
+          <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="images/dog/dog (1).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/dog/dog (2).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/dog/dog (3).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/dog/dog (4).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/dog/dog (5).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/dog/dog (6).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/dog/dog (7).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/dog/dog (8).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/dog/dog (9).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/dog/dog (10).jpg" alt=""></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-        <span class="dot" onclick="currentSlide(8)"></span>
-        <span class="dot" onclick="currentSlide(9)"></span>
-        <span class="dot" onclick="currentSlide(10)"></span>
-      </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
     </section>
     <!-- Photo gallery:end -->
     <!-- Contact-section:start -->
@@ -274,42 +284,42 @@
     <footer>
       <p>DogWise&#169;2023|All rights reserved.</p>
     </footer>
-    <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
     <!-- Footer:end -->
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
   //initialize swiper when document ready
-  var swiper = new Swiper ('.swiper-container', {
-    slidesPerView: 2,
+  var swiper = new Swiper ('.swiper', {
+    // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+        clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+    slidesPerView: 1,
     spaceBetween: 10,
     breakpoints: {
-      480: {
-        slidesPerView: 4,
+      425: {
+        slidesPerView: 1,
         spaceBetween: 40,
       },
       640: {
-        slidesPerView: 5,
+        slidesPerView: 1,
         spaceBetween: 50,
+      },
+      912: {
+        slidesPerView: 1,
+        spaceBetween: 60,
       }
     },
     // Optional parameters   
@@ -321,39 +331,6 @@
         cursor.style.cssText =
           "left: " + e.clientX + "px; top: " + e.clientY + "px;";
       });
-
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-      
- 
     </script>
   </body>
 </html>

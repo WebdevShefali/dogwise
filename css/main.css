@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+    --swiper-navigation-color: #E49A38;
+    
+  }
+  
 body{
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
@@ -10,10 +15,6 @@ body{
 h1{
     font-family: 'PT Serif', serif;
 }
-.swiper {
-    width: 600px;
-    height: 300px;
-  }
 .cursor{
     position: fixed;
     border-radius: 50%;
@@ -217,72 +218,22 @@ footer,.clients {
     flex-direction: column;
 }
 #photo-gallery img{
-    vertical-align: middle;
     width: 700px;
     height: 600px;
-    animation: fade ease 1s;
 }
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
-.slideshow-container{
+.swiper-wrapper{
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
-.number{
-    position: absolute;
-    top: 0;
-    left: 90%;
-    padding: 10px;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400px;
+.swiper-slide{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  .prev:hover, .next:hover {
-    background-color: #d7ae51;
-  }
-  .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #eed08a;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #d7ae51;
-    height: 15px;
-    width: 15px;
-  }
-  .slide{
-    display: none;
+.swiper-pagination-bullet-active {
+    background-color: #d7ae51 !important;
   }
   #photo-gallery h1{
     font-size: 3rem;
@@ -456,6 +407,9 @@ footer{
       width: auto !important;
       overflow-x: hidden !important;
     }
+    .cursor{
+        display: none;
+    }
 .intro-img{
     width: 40vw;
 }
@@ -481,6 +435,9 @@ footer{
     }
     #welcome-section .middle-line{
        display: none;
+    }
+    .swiper-wrapper{
+        max-width: 700px;
     }
 .latest-news{
     margin: 5% 0% 5% 0%;
@@ -520,9 +477,6 @@ footer{
       width: auto !important;
       overflow-x: hidden !important;
     }
-    .cursor{
-        display: none;
-    }
 .intro-img{
     height: 55vh;
     width: 90vw;
@@ -542,6 +496,9 @@ footer{
         padding: 0 10px;
     }
     
+    .swiper-wrapper{
+        max-width: 400px;
+    }
 .latest-news{
     margin: 8% 0% 5% 0%;
 }
@@ -572,9 +529,6 @@ footer{
 #photo-gallery img{
     width: 400px;
     height: 500px;
-}
-.number{
-    left: 80%;
 }
 #contact-section{
     margin-top: 18%;
@@ -614,6 +568,9 @@ footer{
 .newsletter input{
     width: 350px;
 }
+.swiper-wrapper{
+    max-width: 360px;
+}
 #photo-gallery img{
     width: 350px;
     height: 400px;
@@ -641,12 +598,12 @@ footer{
 .newsletter input{
     width: 300px;
 }
+.swiper-wrapper{
+    max-width: 310px;
+}
 #photo-gallery img{
     width: 300px;
     height: 380px;
-}
-.number{
-    left: 73%;
 }
 .contact-form form input{
     width: 300px;
