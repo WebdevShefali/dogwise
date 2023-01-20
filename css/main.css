@@ -10,6 +10,10 @@ body{
 h1{
     font-family: 'PT Serif', serif;
 }
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
 .cursor{
     position: fixed;
     border-radius: 50%;
