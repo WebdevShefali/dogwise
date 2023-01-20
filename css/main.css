@@ -585,6 +585,9 @@ footer{
 .contact-form form input{
     width: 380px;
 }
+.contact-form form button{
+    margin-bottom: 9%;
+}
 .team{
     flex-direction: column;
 }
