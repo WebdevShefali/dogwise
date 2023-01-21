@@ -91,18 +91,18 @@ footer,
 .contact-form form input,
 .team-member h4,
 .team-member p,
-.team-social-icons i {
+.team-social-icons i,.contact-form form p {
   padding: 10px;
 }
 #social-section p,
 #social-section i,
 .home-info p,
 .welcome-info p,
-.latest-news p {
+.latest-news p,.contact-form form p {
   font-weight: 400;
 }
 #social-section p,
-#social-section i {
+#social-section i,.contact-form form p {
   font-size: 18px;
 }
 #social-section i,
@@ -139,12 +139,12 @@ footer {
 }
 .home-info h1,
 .welcome-info h1,
-.latest-news h1 {
+.latest-news h1,.contact-form form h1 {
   font-weight: 1000;
 }
 .home-info h1,
 .welcome-info h1,
-.latest-news h1 {
+.latest-news h1,.contact-form form h1,.contact-form form p {
   padding-bottom: 10px;
 }
 .home-info h1,
@@ -218,7 +218,7 @@ footer {
 .newsletter,
 .client,
 .team-member p,
-.team-social-icons {
+.team-social-icons,.contact-form form h1,.contact-form form p {
   text-align: center;
 }
 .welcome-info h1 {
@@ -243,7 +243,7 @@ footer {
 .latest-news h1,
 #testimonial-section h1,
 #photo-gallery h1,
-#team-section h1 {
+#team-section h1,.contact-form form h1 {
   font-size: 3rem;
 }
 .latest-news p,
@@ -352,6 +352,9 @@ footer {
 }
 footer {
   padding: 20px;
+}
+.contact-form form div{
+  margin-bottom: 15%;
 }
 /*************MEDIA QUERIES****************/
 
