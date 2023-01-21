@@ -187,9 +187,11 @@ footer {
 .download-btns button,
 .contact-form form button,
 .learn-more,
-.subscribe,
-#social-section {
+.subscribe {
   z-index: 999;
+}
+#social-section {
+  z-index: 999999999;
 }
 .download-btns button,
 .contact-form form button,
