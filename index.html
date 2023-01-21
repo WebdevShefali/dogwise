@@ -21,26 +21,29 @@
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
       rel="stylesheet"
-    /><link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-  />
-  
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Title -->
     <title>DogWise</title>
   </head>
   <body>
+    <!-- Custom cursor:start -->
     <div class="cursor"><i class="fa-solid fa-paw fa-xl"></i></div>
+    <!-- Custom cursor:end -->
     <!-- Socials:start -->
     <section id="social-section">
       <p>info@dogwise.com</p>
       <p>+91-9876543210</p>
       <div>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-
+        <!-- Provide the links of social handles in href -->
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </section>
     <!-- Socials:end -->
@@ -58,7 +61,7 @@
     </section>
     <!-- Home section:end -->
     <!-- Welcome section:start -->
-    <section id="welcome-section" >
+    <section id="welcome-section">
       <div class="welcome-info">
         <h1>Welcome</h1>
         <p>
@@ -82,7 +85,7 @@
     </section>
     <!-- Welcome section:end -->
     <!-- News section:start -->
-    <section id="news-section" >
+    <section id="news-section">
       <div class="latest-news">
         <h1>Latest news</h1>
         <p>
@@ -105,7 +108,7 @@
     </section>
     <!-- News section:end -->
     <!-- Testimonial section:start -->
-    <section id="testimonial-section" >
+    <section id="testimonial-section">
       <h1>What our clients say?</h1>
       <div class="clients">
         <div class="middle-line"></div>
@@ -146,36 +149,56 @@
     </section>
     <!-- Testimonial section:end -->
     <!-- Photo gallery:start -->
-    <section id="photo-gallery" >
+    <section id="photo-gallery">
       <h1>Photo gallery</h1>
-     
-          <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"><img src="images/dog/dog (1).jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/dog/dog (2).jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/dog/dog (3).jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/dog/dog (4).jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/dog/dog (5).jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/dog/dog (6).jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/dog/dog (7).jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/dog/dog (8).jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/dog/dog (9).jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/dog/dog (10).jpg" alt=""></div>
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+      <!-- Swiper js slider -->
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="images/dog/dog (1).jpg" alt="dog-img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dog/dog (2).jpg" alt="dog-img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dog/dog (3).jpg" alt="dog-img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dog/dog (4).jpg" alt="dog-img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dog/dog (5).jpg" alt="dog-img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dog/dog (6).jpg" alt="dog-img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dog/dog (7).jpg" alt="dog-img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dog/dog (8).jpg" alt="dog-img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dog/dog (9).jpg" alt="dog-img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dog/dog (10).jpg" alt="dog-img" />
+          </div>
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
+        <!--  navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </section>
     <!-- Photo gallery:end -->
     <!-- Contact-section:start -->
-    <section id="contact-section" >
+    <section id="contact-section">
       <img src="images/contact.png" alt="contact" />
       <div class="contact-form">
         <form>
@@ -191,7 +214,7 @@
     </section>
     <!-- Contact-section:end -->
     <!-- Team section:start -->
-    <section id="team-section" >
+    <section id="team-section">
       <h1>Our Team</h1>
       <div class="team">
         <div class="team-member">
@@ -202,9 +225,10 @@
             dolores delectus minima sit aspernatur.
           </p>
           <div class="team-social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <!-- Provide the links of social handles in href -->
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
         <div class="team-member">
@@ -215,9 +239,10 @@
             dolores delectus minima sit aspernatur.
           </p>
           <div class="team-social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <!-- Provide the links of social handles in href -->
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
         <div class="team-member">
@@ -228,9 +253,10 @@
             dolores delectus minima sit aspernatur.
           </p>
           <div class="team-social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <!-- Provide the links of social handles in href -->
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -242,46 +268,45 @@
     </footer>
 
     <!-- Footer:end -->
-    
+    <!-- Swiper js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Javascript -->
     <script>
-  //initialize swiper when document ready
-  var swiper = new Swiper ('.swiper', {
-    // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+      //initialize swiper when document ready
+      var swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-        clickable: true,
-  },
+        // pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-    slidesPerView: 1,
-    spaceBetween: 10,
-    breakpoints: {
-      425: {
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
         slidesPerView: 1,
-        spaceBetween: 40,
-      },
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 50,
-      },
-      912: {
-        slidesPerView: 1,
-        spaceBetween: 60,
-      }
-    },
-    // Optional parameters   
-
-
-  })
+        spaceBetween: 10,
+        breakpoints: {
+          425: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+          912: {
+            slidesPerView: 1,
+            spaceBetween: 60,
+          },
+        },
+      });
+      // Cursor animation
       var cursor = document.querySelector(".cursor");
       document.addEventListener("mousemove", function (e) {
         cursor.style.cssText =

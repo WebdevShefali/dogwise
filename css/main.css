@@ -3,609 +3,609 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
 :root {
-    --swiper-navigation-color: #E49A38;
-    
-  }
-  
-body{
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
+  --swiper-navigation-color: #e49a38;
 }
-h1{
-    font-family: 'PT Serif', serif;
+h1 {
+  font-family: "PT Serif", serif;
 }
-.cursor{
-    position: fixed;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    width: 45px;
-    height: 45px;
-    transition: .1s;
-  }
+.cursor,
+#social-section {
+  position: fixed;
+}
+.cursor,
+.client img,
+.team-member img {
+  border-radius: 50%;
+}
+.cursor {
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  transition: 0.1s;
+}
 #social-section,
 #home-section,
 #welcome-section,
 #news-section,
 #contact-section,
-footer,.clients,.team {
-    display: flex;
-    flex-direction: row;
+#testimonial-section,
+footer,
+.clients,
+.team,
+#photo-gallery,
+.swiper-slide,
+.contact-form form,
+.team-member,
+#team-section {
+  display: flex;
+}
+#social-section,
+#home-section,
+#welcome-section,
+#news-section,
+#contact-section,
+footer,
+.clients,
+.team {
+  flex-direction: row;
 }
 #social-section,
 #home-section,
 #testimonial-section,
 #team-section,
 #contact-section,
-footer,.clients {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+footer,
+.clients,
+#news-section,
+#photo-gallery,
+.swiper-slide,
+.team-member {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-#social-section{
-    height: 10vh;
-    position: fixed;
-    background-color: #fff;
-    z-index: 999;
-    width: 100%;
+#social-section {
+  height: 10vh;
+  background-color: #fff;
+  width: 100%;
 }
-#social-section p, #social-section i{
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 400;
+#social-section a,
+.team-social-icons a {
+  color: black;
 }
-#social-section i{
-    cursor: pointer;
+#social-section p,
+#social-section i,
+.home-info p,
+.welcome-info p,
+.newsletter h2,
+.newsletter input,
+.client h4,
+.contact-form form input,
+.team-member h4,
+.team-member p,
+.team-social-icons i {
+  padding: 10px;
 }
-#social-section i:hover{
-    color: #d7ae51;
+#social-section p,
+#social-section i,
+.home-info p,
+.welcome-info p,
+.latest-news p {
+  font-weight: 400;
 }
-#home-section{
-    background-color: #d7ae51;
-    height: 90vh;
+#social-section p,
+#social-section i {
+  font-size: 18px;
 }
-.intro-img{
-    height: 85vh;
-    width: 30vw;
-    margin-left: -13%;
-    margin-bottom: 6%;
+#social-section i,
+.download-btns button,
+.learn-more,
+.subscribe,
+.contact-form form button,
+.team-social-icons i {
+  cursor: pointer;
 }
-.home-info{
-    margin-left: 9%;
+#social-section i:hover {
+  color: #d7ae51;
 }
-.home-info h1,.welcome-info h1{
-    font-size: 5rem;
-    font-weight: 1000;
-    padding-bottom: 10px;
+#home-section,
+#welcome-section .middle-line,
+#news-section,
+.clients .middle-line,
+#contact-section,
+.team-social-icons,
+footer {
+  background-color: #d7ae51;
 }
-.home-info p,.welcome-info p{
-    font-size: 1.2rem;
-    font-weight: 400;
-    padding: 10px;
+#home-section {
+  height: 90vh;
 }
-.download-btns button{
-    background-color: black;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 1rem;
-    height: 40px;
-    width: 140px;
-    cursor: pointer;
-    margin: 10px 5px;
+.intro-img {
+  height: 85vh;
+  width: 30vw;
+  margin-left: -13%;
+  margin-bottom: 6%;
 }
-#welcome-section img{
-    height: 700px;
-    width: 700px;
-    margin-right: 5%;
+.home-info {
+  margin-left: 9%;
 }
-.welcome-info{
-    margin: 5% 0% 5% 15%;
+.home-info h1,
+.welcome-info h1,
+.latest-news h1 {
+  font-weight: 1000;
 }
-.welcome-info h1{
-    text-align: center;
-    margin: 1% 0;
+.home-info h1,
+.welcome-info h1,
+.latest-news h1 {
+  padding-bottom: 10px;
 }
-.welcome-info p{
-    margin-right: 4%;
+.home-info h1,
+.welcome-info h1 {
+  font-size: 5rem;
 }
-#welcome-section .middle-line{
-    background-color: #d7ae51;
-    height: 400px;
-    width: 40px;
-    margin-top: 6%;
-    margin-right: 5%;
+.home-info p,
+.welcome-info p,
+.contact-form form label {
+  font-size: 1.2rem;
 }
-#news-section{
-    background-color: #d7ae51;
-    align-items: center;
-    justify-content: center;
+.download-btns button,
+.contact-form form button {
+  margin: 10px 5px;
 }
-.latest-news{
-    margin: 5% 10% 5% -7%;
-    width: 600px;
+.download-btns button,
+.learn-more,
+.subscribe,
+.contact-form form button {
+  background-color: black;
+  width: 140px;
 }
-.latest-news h1{
-    font-size: 3rem;
-    font-weight: 1000;
-    padding-bottom: 10px;
+.download-btns button,
+.learn-more,
+.subscribe,
+.contact-form form button,
+.team-social-icons i:hover {
+  color: #fff;
 }
-.latest-news p{
-    font-size: 1.1rem;
-    font-weight: 400;
+.download-btns button,
+.learn-more,
+.subscribe,
+.newsletter input,
+.contact-form form input,
+.contact-form form button {
+  border-radius: 10px;
+  font-size: 1rem;
+  height: 40px;
 }
-.learn-more{
-    background-color: black;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 1rem;
-    height: 40px;
-    width: 140px;
-    cursor: pointer;
-    margin: 16px 0;
+.download-btns button,
+.contact-form form button,
+.learn-more,
+.subscribe,
+#social-section {
+  z-index: 999;
 }
-.newsletter h2{
-    padding: 10px;
-    font-size: 1.7rem;
-    font-weight: 800;
-}
-.newsletter{
-    margin-bottom: 4%;
-    text-align: center;
-}
-.subscribe{
-    background-color: black;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 1rem;
-    height: 40px;
-    width: 140px;
-    cursor: pointer;
-    margin: 16px 0;
-}
-.newsletter input{
-    border-radius: 10px;
-    font-size: 1rem;
-    height: 40px;
-    width: 400px;
-    margin: 16px 0;
-    outline: none;
-    border: none;
-    padding: 10px;
-}
-.newsletter input:focus{
-    outline: none;
-    border: none;
+.download-btns button,
+.contact-form form button,
+.learn-more,
+.subscribe,
+.swiper-wrapper {
+  position: relative;
 }
 
-#testimonial-section{
-    display: flex;
-    flex-direction: column;
+#welcome-section img,
+#contact-section img {
+  height: 700px;
 }
-#testimonial-section h1{
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 5% 0 1% 0;
+#welcome-section img,
+#photo-gallery img {
+  width: 700px;
 }
-.client{
-    height: 400px;
-    width: 250px;
-    margin: 5% 20px;
-    text-align: center;
-    padding: 50px 10px;
+#welcome-section img,
+#welcome-section .middle-line {
+  margin-right: 5%;
 }
-.client img{
-    border-radius: 50%;
-    height: 90px;
-    width: 90px;
-    margin: 2%;
+.welcome-info {
+  margin: 5% 0% 5% 15%;
 }
-.clients .middle-line{
-    background-color: #d7ae51;
-    height: 350px;
-    width: 2px;
+.welcome-info h1,
+.newsletter,
+.client,
+.team-member p,
+.team-social-icons {
+  text-align: center;
 }
-.client h4{
-    font-size: 1.1rem;
-    padding: 10px;
+.welcome-info h1 {
+  margin: 1% 0;
 }
-#photo-gallery{
-    justify-content: center;
-    align-items:center;
-    display: flex;
-    flex-direction: column;
+.welcome-info p {
+  margin-right: 4%;
 }
-#photo-gallery img{
-    width: 700px;
-    height: 600px;
+#welcome-section .middle-line,
+.client,
+.team-member {
+  height: 400px;
 }
-.swiper-wrapper{
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+#welcome-section .middle-line {
+  width: 40px;
+  margin-top: 6%;
 }
-.swiper-slide{
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.latest-news {
+  margin: 5% 10% 5% -7%;
+  width: 600px;
+}
+.latest-news h1,
+#testimonial-section h1,
+#photo-gallery h1,
+#team-section h1 {
+  font-size: 3rem;
+}
+.latest-news p,
+.client h4,
+.team-member h4 {
+  font-size: 1.1rem;
+}
+.learn-more,
+.subscribe,
+.newsletter input,
+.contact-form form input {
+  margin: 16px 0;
+}
+.newsletter h2,
+#testimonial-section h1,
+#photo-gallery h1,
+#team-section h1 {
+  font-weight: 800;
+}
+.newsletter h2 {
+  font-size: 1.7rem;
+}
+.newsletter {
+  margin-bottom: 4%;
+}
+.newsletter input,
+.contact-form form input {
+  width: 400px;
+}
+.newsletter input,
+.newsletter input:focus,
+.contact-form form input,
+.contact-form form input:focus {
+  outline: none;
+  border: none;
+}
+#testimonial-section,
+#photo-gallery,
+.contact-form form,
+.team-member,
+#team-section {
+  flex-direction: column;
+}
+#testimonial-section h1 {
+  margin: 5% 0 1% 0;
+}
+.client {
+  margin: 5% 20px;
+  padding: 50px 10px;
+}
+.client,
+.team-member,
+.team-social-icons {
+  width: 250px;
+}
+.client img {
+  height: 90px;
+  width: 90px;
+  margin: 2%;
+}
+.clients .middle-line {
+  height: 350px;
+  width: 2px;
+}
+#photo-gallery img {
+  height: 600px;
+}
+.swiper-wrapper {
+  max-width: 1000px;
+}
+.swiper-wrapper,
+.swiper-slide {
+  margin: auto;
 }
 .swiper-pagination-bullet-active {
-    background-color: #d7ae51 !important;
+  background-color: #d7ae51 !important;
+}
+#photo-gallery h1 {
+  margin: 5% 0;
+}
+#contact-section,
+footer {
+  margin-top: 5%;
+}
+#contact-section img {
+  width: 500px;
+  margin-left: -10%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+.team-member {
+  margin: 0 60px;
+  padding: 10px 10px 0 10px;
+  border: 2px solid #eed08a;
+}
+.team-member img {
+  height: 200px;
+  width: 200px;
+  border: 3px solid #d7ae51;
+}
+#team-section {
+  margin-top: 3%;
+}
+#team-section h1 {
+  margin: 3% 0;
+}
+footer {
+  padding: 20px;
+}
+/*************MEDIA QUERIES****************/
+
+/* Media query for large screen(1440px) laptop */
+@media only screen and (max-width: 1440px) {
+  #welcome-section img {
+    margin-right: 2%;
   }
-  #photo-gallery h1{
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 5% 0;
-}
-#contact-section{
-    background-color: #d7ae51;
-    margin-top: 5%;
-}
-#contact-section img{
-    height: 700px;
-    width: 500px;
-    margin-left: -10%;
-    margin-right: 15%;
-    margin-bottom: 5%;
-}
-.contact-form form{
-    display: flex;
-    flex-direction: column;
-}
-.contact-form form input{
-    border-radius: 10px;
-    font-size: 1rem;
-    height: 40px;
-    width: 400px;
-    margin: 16px 0;
-    outline: none;
-    border: none;
-    padding: 10px;
-}
-.contact-form form input:focus{
-    outline: none;
-    border: none;
-}
-.contact-form form button{
-    background-color: black;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 1rem;
-    height: 40px;
-    width: 140px;
-    cursor: pointer;
-    margin: 10px 5px;
-}
-.contact-form form label{
-    font-size: 1.2rem;
-}
-.team-member{
-    height: 400px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 60px;
-    padding: 10px 10px 0 10px;
-    border: 2px solid #eed08a;
-}
-.team-member img{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    border: 3px solid #d7ae51;
-}
-.team-member h4{
-    font-size: 1.1rem;
-    padding: 10px;
-}
-.team-member p{
-    padding: 10px;
-    text-align: center;
-}
-#team-section{
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%;
-}
-#team-section h1{
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 3% 0;
-}
-.team-social-icons i{
-    padding: 10px;
-    cursor: pointer;
-}
-.team-social-icons {
-   background-color: #d7ae51;
-   width: 250px;
-   text-align: center;
-}
-.team-social-icons i:hover{
-    color: #fff;
-}
-footer{
-    background-color: #d7ae51;
-    margin-top: 5%;
-    padding: 20px;
-}
-/* For large screen laptop */
-@media only screen and (max-width:1440px){
-    #welcome-section img{
-        margin-right: 2%;
-    }
-    .welcome-info p{
-        margin-right: 4%;
-    }
-    #welcome-section .middle-line{
-        height: 500px;
-        margin-top: 7%;
-        margin-right: 0%;
-    }
-.latest-news{
+  #welcome-section .middle-line {
+    height: 500px;
+    margin-top: 7%;
+    margin-right: 0%;
+  }
+  .latest-news {
     margin: 5% 10% 5% -2%;
+  }
 }
-}
-/* For 1280px screen laptop */
-@media only screen and (max-width:1280px){
-    #welcome-section img{
-        margin-right: 0%;
-    }
-    .welcome-info p{
-        margin-right: 1%;
-    }
-    #welcome-section .middle-line{
-        height: 550px;
-        margin-right: -4%;
-    }
-.latest-news{
+/* Media query for 1280px screen laptop */
+@media only screen and (max-width: 1280px) {
+  #welcome-section img {
+    margin-right: 0%;
+  }
+  .welcome-info p {
+    margin-right: 1%;
+  }
+  #welcome-section .middle-line {
+    height: 550px;
+    margin-right: -4%;
+  }
+  .latest-news {
     margin: 5% 10% 5% 2%;
+  }
 }
-}
-/* For 1024px screen laptop */
-@media only screen and (max-width:1024px){
-    #welcome-section img{
-        margin-right: -3%;
-        height: 600px;
-        width: 600px;
-        margin-top: 7%;
-    }
-    .welcome-info{
-        margin: 5% 0% 5% 8%;
-    }
-    .welcome-info p{
-        margin-right: 0%;
-    }
-    #welcome-section .middle-line{
-        height: 550px;
-        margin-top: 8%;
-        margin-right: -7%;
-    }
-.latest-news{
+/* Media query for 1024px screen laptop */
+@media only screen and (max-width: 1024px) {
+  #welcome-section img {
+    margin-right: -3%;
+    height: 600px;
+    width: 600px;
+    margin-top: 7%;
+  }
+  .welcome-info {
+    margin: 5% 0% 5% 8%;
+  }
+  .welcome-info p {
+    margin-right: 0%;
+  }
+  #welcome-section .middle-line {
+    height: 550px;
+    margin-top: 8%;
+    margin-right: -7%;
+  }
+  .latest-news {
     margin: 5% 7% 5% 3%;
-}
-#contact-section img{
+  }
+  #contact-section img {
     height: 700px;
-    width: 500px;
     margin-left: -4%;
     margin-right: 4%;
-    margin-bottom: 5%;
-}
-.team-member{
+  }
+  .team-member {
     margin: 0 40px;
+  }
 }
-}
-/* For tablet */
-@media only screen and (max-width:912px){
-    html,
-    body {
-      width: auto !important;
-      overflow-x: hidden !important;
-    }
-    .cursor{
-        display: none;
-    }
-.intro-img{
+/* Media query for tablet screen */
+@media only screen and (max-width: 912px) {
+  html,
+  body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+  .cursor,
+  #welcome-section .middle-line {
+    display: none;
+  }
+  .intro-img {
     width: 40vw;
-}
-.download-btns button{
-    margin: 10px 5px;
-}
-#welcome-section,#news-section{
+  }
+  #welcome-section,
+  #news-section {
     flex-direction: column;
-}
-    #welcome-section img{
-        margin-right: 0%;
-        height: 650px;
-        width: 650px;
-        margin-top: 0%;
-        align-self: center;
-    }
-    .welcome-info{
-        margin: 5% 0% 0% 0%;
-        text-align: center;
-    }
-    .welcome-info p{
-        margin-right: 0%;
-    }
-    #welcome-section .middle-line{
-       display: none;
-    }
-    .swiper-wrapper{
-        max-width: 700px;
-    }
-.latest-news{
-    margin: 5% 0% 5% 0%;
+  }
+  #welcome-section img {
+    height: 650px;
+    width: 650px;
+    margin-top: 0%;
+    align-self: center;
+  }
+  .welcome-info {
+    margin: 5% 0% 0% 0%;
+  }
+  .welcome-info,
+  .latest-news {
     text-align: center;
-}
-.client{
-    width: 230px;
+  }
+  #welcome-section img,
+  .welcome-info p,
+  #contact-section img {
+    margin-right: 0%;
+  }
+  .swiper-wrapper {
+    max-width: 700px;
+  }
+  .latest-news {
+    margin: 5% 0% 5% 0%;
+  }
+  .client {
     margin: 5% 9px;
     padding: 50px 5px;
-}
-#contact-section{
+  }
+  #contact-section {
     margin-top: 8%;
     flex-wrap: nowrap;
-}
-#contact-section img{
+  }
+  #contact-section img {
     margin-left: -9%;
-    margin-right: 0%;
-    margin-bottom: 5%;
-}
-.contact-form form input{
+  }
+  .contact-form form input {
     width: 300px;
-}
-.team-member{
-    width: 230px;
+  }
+  .team-member {
     margin: 0 14px;
-    padding: 10px 10px 0 10px;
-    border: 2px solid #eed08a;
+  }
+  .client,
+  .team-member,
+  .team-social-icons {
+    width: 230px;
+  }
 }
-.team-social-icons {
-   width: 230px;
-}
-}
-/* For large mobile */
-@media only screen and (max-width:425px){
-    html,
-    body {
-      width: auto !important;
-      overflow-x: hidden !important;
-    }
-.intro-img{
+/* Media query for large mobile screen */
+@media only screen and (max-width: 425px) {
+  .intro-img {
     height: 55vh;
     width: 90vw;
-    margin-left: 0;
     margin-bottom: -9%;
-}
-.home-info{
+  }
+  .intro-img,
+  .home-info {
     margin-left: 0;
+  }
+  .home-info,
+  #testimonial-section h1 {
     text-align: center;
-}
-    #welcome-section img{
-        height: 450px;
-        width: 420px;
-    }
-    .welcome-info p{
-        margin-right: 0%;
-        padding: 0 10px;
-    }
-    
-    .swiper-wrapper{
-        max-width: 400px;
-    }
-.latest-news{
-    margin: 8% 0% 5% 0%;
-}
-.latest-news p{
-    padding: 0 110px;
-}
-.newsletter input{
-    width: 380px;
-}
+  }
+  #welcome-section img {
+    height: 450px;
+    width: 420px;
+  }
+  .welcome-info p {
+    margin-right: 0%;
+    padding: 0 10px;
+  }
 
-#testimonial-section h1{
+  .swiper-wrapper {
+    max-width: 400px;
+  }
+  .latest-news {
+    margin: 8% 0% 5% 0%;
+  }
+  .latest-news p {
+    padding: 0 110px;
+  }
+  .newsletter input,
+  #contact-section img,
+  .contact-form form input {
+    width: 380px;
+  }
+
+  #testimonial-section h1 {
     margin: 9% 0 8% 0;
-    text-align: center;
-}
-.clients .middle-line{
+  }
+  .clients .middle-line {
     height: 5px;
     width: 300px;
-}
-.client{
+  }
+  .client {
     margin: 2% 20px;
-}
-.client img{
+  }
+  .client img {
     margin: 1%;
-}
-#photo-gallery h1,#team-section h1{
-  margin: 8% 0;
-}
-#photo-gallery img{
+  }
+  #photo-gallery h1,
+  #team-section h1 {
+    margin: 8% 0;
+  }
+  #photo-gallery img {
     width: 400px;
     height: 500px;
-}
-#contact-section{
+  }
+  #contact-section {
     margin-top: 18%;
-    flex-direction: column;
-}
-#contact-section img{
+  }
+  #contact-section img {
     align-self: center;
     margin: -18% 0 0% 0;
     height: 420px;
-    width: 380px;
-}
-.contact-form form input{
-    width: 380px;
-}
-.contact-form form button{
+  }
+  .contact-form form button {
     margin-bottom: 9%;
-}
-.team{
+  }
+  #contact-section,
+  .team {
     flex-direction: column;
-}
-.team-member{
-    width: 280px;
+  }
+  .team-member {
     margin: 10px 14px;
+  }
+  .team-member,
+  .team-social-icons {
+    width: 280px;
+  }
 }
-.team-social-icons {
-   width: 280px;
-}
-}
-/* For medium mobile */
-@media only screen and (max-width:375px){ 
-    #social-section{
+/* Media query for medium mobile screen */
+@media only screen and (max-width: 375px) {
+  #social-section {
     height: 16vh;
-}
-.latest-news p{
+  }
+  .latest-news p {
     padding: 0 130px;
-}
-.newsletter input{
+  }
+  .newsletter input,
+  #photo-gallery img,
+  .contact-form form input {
     width: 350px;
-}
-.swiper-wrapper{
+  }
+  .swiper-wrapper {
     max-width: 360px;
-}
-#photo-gallery img{
-    width: 350px;
+  }
+  #photo-gallery img {
     height: 400px;
+  }
 }
-.contact-form form input{
-    width: 350px;
-}
-}
-/* For small mobile */
-@media only screen and (max-width:320px){
-    #welcome-section img{
-        height: 400px;
-        width: 310px;
-    }
-    .welcome-info{
-        margin: 5% 0% 5% 0%;
-        text-align: center;
-    }
-    .welcome-info p{
-        margin-right: 0%;
-    }
-.latest-news p{
+/* Media query for small mobile screen */
+@media only screen and (max-width: 320px) {
+  #welcome-section img {
+    height: 400px;
+    width: 310px;
+  }
+  .welcome-info {
+    margin: 5% 0% 5% 0%;
+    text-align: center;
+  }
+  .latest-news p {
     padding: 0 150px;
-}
-.newsletter input{
+  }
+  .newsletter input,
+  #photo-gallery img,
+  .contact-form form input {
     width: 300px;
-}
-.swiper-wrapper{
+  }
+  .swiper-wrapper {
     max-width: 310px;
-}
-#photo-gallery img{
-    width: 300px;
+  }
+  #photo-gallery img {
     height: 380px;
-}
-.contact-form form input{
-    width: 300px;
-}
+  }
 }
