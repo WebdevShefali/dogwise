@@ -330,8 +330,8 @@ footer {
 }
 #contact-section img {
   width: 500px;
-  margin-left: -10%;
-  margin-right: 15%;
+  margin-left: -6%;
+  margin-right: 11%;
   margin-bottom: 5%;
 }
 .team-member {
@@ -356,6 +356,11 @@ footer {
 .contact-form form div{
   margin-bottom: 15%;
 }
+#contact-section{
+  width: 60vw;
+  margin-left: 20%;
+  border-radius: 30px;
+}
 /*************MEDIA QUERIES****************/
 
 /* Media query for large screen(1440px) laptop */
@@ -370,6 +375,12 @@ footer {
   }
   .latest-news {
     margin: 5% 10% 5% -2%;
+  }
+  #contact-section{
+    flex-wrap: nowrap;
+  }
+  #contact-section img {
+    margin-right: 0%;
   }
 }
 /* Media query for 1280px screen laptop */
@@ -386,6 +397,13 @@ footer {
   }
   .latest-news {
     margin: 5% 10% 5% 2%;
+  }  
+  #contact-section{
+    width: 80vw;
+    margin-left: 10%;
+  }
+  #contact-section img {
+    margin-left: -15%;
   }
 }
 /* Media query for 1024px screen laptop */
@@ -412,8 +430,8 @@ footer {
   }
   #contact-section img {
     height: 700px;
-    margin-left: -4%;
-    margin-right: 4%;
+    margin-left: -13%;
+    margin-right: 0%;
   }
   .team-member {
     margin: 0 40px;
@@ -464,16 +482,15 @@ footer {
   .client {
     margin: 5% 9px;
     padding: 50px 5px;
-  }
+  }  
   #contact-section {
     margin-top: 8%;
-    flex-wrap: nowrap;
-  }
-  #contact-section img {
-    margin-left: -9%;
+    width: 100vw;
+    margin-left: 0%;
+    border-radius: 0;
   }
   .contact-form form input {
-    width: 300px;
+    width: 280px;
   }
   .team-member {
     margin: 0 14px;
