@@ -266,52 +266,10 @@
     <footer>
       <p>DogWise&#169;2023|All rights reserved.</p>
     </footer>
-
     <!-- Footer:end -->
     <!-- Swiper js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Javascript -->
-    <script>
-      //initialize swiper when document ready
-      var swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-
-        // pagination
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        slidesPerView: 1,
-        spaceBetween: 10,
-        breakpoints: {
-          425: {
-            slidesPerView: 1,
-            spaceBetween: 40,
-          },
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 50,
-          },
-          912: {
-            slidesPerView: 1,
-            spaceBetween: 60,
-          },
-        },
-      });
-      // Cursor animation
-      var cursor = document.querySelector(".cursor");
-      document.addEventListener("mousemove", function (e) {
-        cursor.style.cssText =
-          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-      });
-    </script>
+    <!-- Javascript file -->
+    <script src="js/script.js"></script>
   </body>
 </html>
