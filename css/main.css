@@ -363,6 +363,9 @@ footer {
   margin-left: 20%;
   border-radius: 30px;
 }
+.team-social-icons{
+  margin-left: -5%;
+}
 /*************MEDIA QUERIES****************/
 
 /* Media query for large screen(1440px) laptop */
